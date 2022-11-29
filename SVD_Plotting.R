@@ -39,8 +39,9 @@ Sigma <- sing_val * diag(length(sing_val))[,1:length(sing_val)]
 
 
 
-# Calculamos Distancias respescto a un punto i
+# Calculamos Distancias Euclidianas respescto a un punto i
 euc.dist <- function(i, j) sqrt((U[i,1]-U[j,1])^2 + (U[i,2]-U[j,2])^2)
+# Almacenamos las distancias de ese punto i con respecto a todos los demas 
 dists <- function(i){
   distancias <- c()
   for(k in 1:nrow(atributos)){
@@ -50,14 +51,15 @@ dists <- function(i){
 }
 
 
-# Función de Graficado
-
+# Función de Graficado Simple para observar la cercanía de todas las canciones
 graficado <- function(){
   ggplot(U) + geom_point(aes(x=U$V1, y=U$V2), pch=19, size=3) +
     labs(x = "Ux", y ="Uy", title = "Descomposición en Valores Singulares: Music Genomics")
 }
 
 
+# Esta función grafica todas las canciones pero agrega un gradiente de color
+# para las cancicones mas lejanas al punto que queramos
 graficado_grad <- function(punto){
   U$distancia <- dists(punto)
   ggplot(U) + geom_point(aes(x=U$V1, y=U$V2, fill=U$distancia), pch=21, size=3) +
