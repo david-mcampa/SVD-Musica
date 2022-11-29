@@ -8,10 +8,11 @@ Con esta matriz se puede calcular su Descomposición en Valores SIngulares (SVD)
 
 Este proyecto busca obtener tal información y sentar una forma sencilla de recomendar canciones, pues si tienes gusto por una canción en particular, es probable que una canción que tenga atributos simulares también sea de tu agrado y que por el contrario una canción completamente diferente no lo sea.
 
-
 ## Marco Teórico
 
 ## Desarrollo 
+
+### Tecnologías Utilizadas
 
 ## Conclusión
 
