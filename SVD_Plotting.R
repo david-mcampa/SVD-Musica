@@ -1,3 +1,7 @@
+
+# Instalamos y cargamos librerias
+install.packages("tidyverse")
+install.packages("ggplot2")
 library(tidyverse)
 library(ggplot2)
 
@@ -82,10 +86,8 @@ graficado_grad(U, 2000)
 # Ahora encontramos las 10 canciones mas cercanas a una, para ello agregamos la columna del nombre
 # a nuestra matriz U
 
-U <- cbind(U, data$song_title)
-canciones_similares <- head(U[order(U$distancia),], 11)
-nombres <- canciones_similares$`data$song_title`
-indice <- as.integer(rownames(canciones_similares))
+U <- cbind(U, data$song_title, data$artist)
+canciones_similares <- head(U[order(U$distancia),], 5)
 
 canciones_similares
 
