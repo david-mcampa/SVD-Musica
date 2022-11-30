@@ -10,6 +10,7 @@ Este proyecto busca obtener tal información y sentar una forma sencilla de reco
 
 ## Marco Teórico
 
+$$ A = \sigma $$
 
 
 ## Desarrollo 
