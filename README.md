@@ -61,8 +61,9 @@ Y así podemos encontrar las 5 canciones con distancias menores, que en este cas
 
 Y así se puede hacer con cualquier canción dentro del dataset.
 
-### Tecnologías Utilizadas
+### Lenguaje y Librerías Utilizadas
 
+Para este proyectp se utlizó \textit{R} y las librerías \textit{ggplot2} y \textit{tidyverse}
 
 ## Conclusión
 
