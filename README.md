@@ -35,7 +35,7 @@ $$A = U\Sigma V^T $$
 
 Entonces
 $$U \rightarrow P$$
-$$\Sigma V^T \ rightarrow Q^T$$
+$$\Sigma V^T \rightarrow Q^T$$
 
 Así cada renglón de $U$ en la descomposición de valores singulares es una canción y cada columna es el peso que cada estilo contribuye a cada canción entonces podemos usar $U$ para comparar estilos de las canciones, así, dos canciones que se encuentren cerca en el espacio de estilos son canciones que son similares y según nuestra hipótesis si una canción te gusta entonces las más cercanas a ellas es probable que sean de tu agrado.
 
