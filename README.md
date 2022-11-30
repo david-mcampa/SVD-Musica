@@ -1,6 +1,6 @@
 # Descomposición de Valores Singulares (SVD) para análisis de Genómica de la Música y posibles Sistemas de Recomendación de Canciones 
 
-## Introducción
+## Introducción 
 
 La Genómica de la Música ha sido un esfuerzo por estudiar matemáticamente las relaciones que existen entre varias canciones. Para este proyecto se construye una matriz binaria en donde cada columna representa un atributo musical y cada renglón una canción. Así cada atributo haría referencia a un gen y su valor 0 o 1 indica que tal canción (o gen) posee esa característica (o el gen está expresado). 
 
@@ -16,10 +16,14 @@ Sea $A$ una matriz de $m \times n$ con rango $r$. Entonces existe una matriz $\S
 
 $$ A =  U\Sigma V^T $$
 
-Cualquier factorización $A =  U\sigma V^T$ con $U$ y $V$ ortogonales y entradas positivas en $D$, se llama descomposición en valores singulares de $A$. Las matrices $U$ y $V$ no están determiandas de forma única por $A$, pero loas entradas diagonales en $D$ son necesariamente lso valores singulares de $A$. 
+Cualquier factorización $A =  U\sigma V^T$ con $U$ y $V$ ortogonales y entradas positivas en $D$, se llama descomposición en valores singulares de $A$. Las matrices $U$ y $V$ no están determiandas de forma única por $A$, pero las entradas diagonales en $D$ son necesariamente los valores singulares de $A$. 
 
 
-## Desarrollo 
+## Metodología y Aplicación a la Matriz de Genómica de la Música
+
+
+
+
 
 ### Tecnologías Utilizadas
 
