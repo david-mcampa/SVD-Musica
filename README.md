@@ -21,7 +21,9 @@ Cualquier factorización $A =  U\sigma V^T$ con $U$ y $V$ ortogonales y entradas
 
 ## Metodología y Aplicación a la Matriz de Genómica de la Música
 
-Se extrayeron datos de 2017 canciones con atributos como \textit{acousticness, danceability, energy, instrumentalness, key, liveness, loudness, mode, speechiness, tempo, time_signature, valence}, estos datos fueron creados por Spotify. 
+Se extrayeron datos de 2017 canciones con atributos como \textit{acousticness, danceability, energy, instrumentalness, key, liveness, loudness, mode, speechiness, tempo, time_signature, valence}, estos datos fueron creados por Spotify. Con estos datos se construyó la matriz de genómica $A$, es decir, se convirtió a la matriz de los datos en una matriz binaria que solo admite los valores 0 y 1. Para determinar cuál valor debe tener cada entrada se calculó la media de cada atributo y si cada entrada en la matriz era menor a la media entonces esa entrada se cambia por un 0 y si es mayor se cambia por un 1.
+
+Posteriormente se le aplica SVD a esta matriz $A$ de tal manera que tenemos $A = U\Sigma V^T $
 
 
 
