@@ -51,7 +51,7 @@ Ahora, podemos utilizar esta representación como ya se mencionó arriba para re
 
 Y así podemos encontrar las 5 canciones con distacias menores, que en este caso serían
 
-begin{tabular}{r l}
+\begin{tabular}{r l}
 Canción & Artista \\
 Versace Python & Riff Raff \\
 Feel The Volume  & Jauz\\
