@@ -61,10 +61,13 @@ Glad You Came & The Wanted \\
 Flashwind - Radio Edit & Ben Remember
 \end{tabular}
 
-| First Header  | Second Header |
+| Canción  | Artista |
 | ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
+| Versace Python  | Riff Raff  |
+| Feel The Volume  | Jauz  |
+| Made Me | Snootie Wild  |
+| Glad You Came  | The Wanted  |
+| Flashwind - Radio Edit  | Ben Remember  |
 
 
 ### Tecnologías Utilizadas
