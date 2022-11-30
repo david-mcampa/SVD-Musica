@@ -49,6 +49,17 @@ Ahora, podemos utilizar esta representación como ya se mencionó arriba para re
 
 ![Rplot2](https://user-images.githubusercontent.com/74944322/204742563-835ae430-ec85-4868-a400-59a585b4c9a0.png)
 
+Y así podemos encontrar las 5 canciones con distacias menores, que en este caso serían
+
+begin{tabular}{r l}
+Canción & Artista \\
+Versace Python & Riff Raff \\
+Feel The Volume  & Jauz\\
+Made Me & Snootie Wild \\
+Glad You Came & The Wanted \\
+Flashwind - Radio Edit & Ben Remember
+\end{tabular}
+
 
 
 ### Tecnologías Utilizadas
