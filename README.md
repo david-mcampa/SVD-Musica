@@ -42,7 +42,7 @@ Así cada renglón de $U$ en la descomposición de valores singulares es una can
 Para graficar estas canciones en un plano solo consideramos los 2 valores singulares mas grandes. Al graficar obtenemos 
 
 <p align="center">
-![Rplot1](https://user-images.githubusercontent.com/74944322/204724338-bb29a60e-f621-467e-8383-0e52731efd52.png)
+  ![Rplot1](https://user-images.githubusercontent.com/74944322/204724338-bb29a60e-f621-467e-8383-0e52731efd52.png)
 </p>
 
 
