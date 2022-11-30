@@ -10,7 +10,11 @@ Este proyecto busca obtener tal información y sentar una forma sencilla de reco
 
 ## Marco Teórico
 
-$$ A = \sigma $$
+### Descomposición en valores singulares
+
+Sea $A$ una matriz de $m \times n$ con rango $r$. Entonces existe una matriz $\Sigma$ de $m \times n$ para la cual las entradas diagonales en $D$ son los primeros $r$ valores singulares de $A$, $\sigma_1 \geq \sigma_2 \geq \cdot \cdot \cdot \geq \sigma_r > 0$, y existen una matriz ortogonal $U$ de $m \times m$ y una matriz ortogonal $V$ de $n \times n$ tales que
+
+$$ A =  U\sigma V^T $$
 
 
 ## Desarrollo 
