@@ -23,9 +23,21 @@ Cualquier factorización $A =  U\sigma V^T$ con $U$ y $V$ ortogonales y entradas
 
 Se extrayeron datos de 2017 canciones con atributos como \textit{acousticness, danceability, energy, instrumentalness, key, liveness, loudness, mode, speechiness, tempo, time_signature, valence}, estos datos fueron creados por Spotify. Con estos datos se construyó la matriz de genómica $A$, es decir, se convirtió a la matriz de los datos en una matriz binaria que solo admite los valores 0 y 1. Para determinar cuál valor debe tener cada entrada se calculó la media de cada atributo y si cada entrada en la matriz era menor a la media entonces esa entrada se cambia por un 0 y si es mayor se cambia por un 1.
 
-Posteriormente se le aplica SVD a esta matriz $A$ de tal manera que tenemos $A = U\Sigma V^T $
+Posteriormente se le aplica SVD a esta matriz $A$ de tal manera que tenemos $A = U\Sigma V^T $. Analicemos que significan estas matrices.
 
+La matriz $A$ tiene como renglones a cada una de las 2017 canciones y cada columna son los aributos que mencionamos, ahora, es lógico pensar que cada canción tiene un esilo musical y que cada estilo musical está asociado con sus atributos. Entonces la idea es que canciones simlares tienen estilos parecidos, para ello queremos reprsentar las canciones en el "espacio de estilos", matemáticamente queremos "partir" a la matriz $A$ enuna matriz $P$ que contenga la interacción canción-estilo y otra matriz $Q$ que contiene la interacción estilo-atributo
 
+$$A = PQ^T$$
+
+Y eso es lo que SVD hace
+
+$$A = U\Sigma V^T $$
+
+Entonces
+$$U \rightarrow P$$
+$$\Sigma V^T \ rightarrow Q^T$$
+
+Así cada renglón de $U$ en la descomposición de valores singulares es una canción y cada columna es el peso que cada estilo contribuye a cada canción entonces podemos usar $U$ para comparar estilos de las canciones, así, dos canciones que se encuentren cerca en el espacio de estilos son canciones que son similares y según nuestra hipótesis si una canción te gusta entonces las más cercanas a ellas es probable que sean de tu agrado.
 
 ### Tecnologías Utilizadas
 
