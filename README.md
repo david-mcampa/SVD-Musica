@@ -21,7 +21,7 @@ Cualquier factorización $A =  U\sigma V^T$ con $U$ y $V$ ortogonales y entradas
 
 ## Metodología y Aplicación a la Matriz de Genómica de la Música
 
-
+Se extrayeron datos de 2017 canciones con atributos como \textit{acousticness, danceability, energy, instrumentalness, key, liveness, loudness, mode, speechiness, tempo, time_signature, valence}, estos datos fueron creados por Spotify. 
 
 
 
