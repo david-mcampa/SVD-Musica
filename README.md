@@ -43,6 +43,12 @@ Para graficar estas canciones en un plano solo consideramos los 2 valores singul
 
 ![Rplot1](https://user-images.githubusercontent.com/74944322/204724338-bb29a60e-f621-467e-8383-0e52731efd52.png)>
 
+Así obtenemos todas las canciones en este espacio de estilos.
+
+Ahora, podemos utilizar esta representación como ya se mencionó arriba para recomendar canciones, supongamos que tienes un gusto por la canción Can't Get Enough - Pegboard Nerds Remix, la ubicamos dentro del espacio y mediante un gradiente de color resaltamos las canciones mas cercanas
+
+![Rplot2](https://user-images.githubusercontent.com/74944322/204742563-835ae430-ec85-4868-a400-59a585b4c9a0.png)
+
 
 
 ### Tecnologías Utilizadas
