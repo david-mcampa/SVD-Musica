@@ -14,7 +14,7 @@ Este proyecto busca obtener tal información y sentar una forma sencilla de reco
 
 Sea $A$ una matriz de $m \times n$ con rango $r$. Entonces existe una matriz $\Sigma$ de $m \times n$ para la cual las entradas diagonales en $D$ son los primeros $r$ valores singulares de $A$, $\sigma_1 \geq \sigma_2 \geq \cdot \cdot \cdot \geq \sigma_r > 0$, y existen una matriz ortogonal $U$ de $m \times m$ y una matriz ortogonal $V$ de $n \times n$ tales que
 
-$$ A =  U\sigma V^T $$
+$$ A =  U\Sigma V^T $$
 
 Cualquier factorización $A =  U\sigma V^T$ con $U$ y $V$ ortogonales y entradas positivas en $D$, se llama descomposición en valores singulares de $A$. Las matrices $U$ y $V$ no están determiandas de forma única por $A$, pero loas entradas diagonales en $D$ son necesariamente lso valores singulares de $A$. 
 
