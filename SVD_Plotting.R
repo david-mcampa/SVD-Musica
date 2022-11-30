@@ -57,11 +57,16 @@ graficado <- function(){
     labs(x = "Ux", y ="Uy", title = "Descomposición en Valores Singulares: Music Genomics")
 }
 
+dist_punto <- function(punto){
+  U$distancia <- dists(punto)
+  return(U)
+}
+
+U <- dist_punto(2000)
 
 # Esta función grafica todas las canciones pero agrega un gradiente de color
 # para las cancicones mas lejanas al punto que queramos
-graficado_grad <- function(punto){
-  U$distancia <- dists(punto)
+graficado_grad <- function(U, punto){
   ggplot(U) + geom_point(aes(x=U$V1, y=U$V2, fill=U$distancia), pch=21, size=3) +
     geom_point(aes(x=U[punto,1], y=U[punto,2]), size=3, colour="red") + 
     scale_fill_gradient(low = "cyan",high = "darkblue") +
@@ -71,7 +76,19 @@ graficado_grad <- function(punto){
 }
 
 graficado()
-graficado_grad(2000)
+graficado_grad(U, 2000)
+
+
+# Ahora encontramos las 10 canciones mas cercanas a una, para ello agregamos la columna del nombre
+# a nuestra matriz U
+
+U <- cbind(U, data$song_title)
+canciones_similares <- head(U[order(U$distancia),], 11)
+nombres <- canciones_similares$`data$song_title`
+indice <- as.integer(rownames(canciones_similares))
+
+canciones_similares
+
 
 
 
