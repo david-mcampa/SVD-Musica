@@ -63,7 +63,7 @@ Y así se puede hacer con cualquier canción dentro del dataset.
 
 ### Lenguaje y Librerías Utilizadas
 
-Para este proyectp se utlizó \textit{R} y las librerías \textit{ggplot2} y \textit{tidyverse}
+Para este proyectp se utlizó *R* y las librerías *ggplot2* y *tidyverse*
 
 ## Conclusión
 
