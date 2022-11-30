@@ -39,6 +39,12 @@ $$\Sigma V^T \rightarrow Q^T$$
 
 Así cada renglón de $U$ en la descomposición de valores singulares es una canción y cada columna es el peso que cada estilo contribuye a cada canción entonces podemos usar $U$ para comparar estilos de las canciones, así, dos canciones que se encuentren cerca en el espacio de estilos son canciones que son similares y según nuestra hipótesis si una canción te gusta entonces las más cercanas a ellas es probable que sean de tu agrado.
 
+Para graficar estas canciones en un plano solo consideramos los 2 valores singulares mas grandes. Al graficar obtenemos 
+
+![Rplot1](https://user-images.githubusercontent.com/74944322/204724338-bb29a60e-f621-467e-8383-0e52731efd52.png)
+
+
+
 ### Tecnologías Utilizadas
 
 ## Conclusión
