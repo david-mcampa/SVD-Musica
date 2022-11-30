@@ -16,6 +16,8 @@ Sea $A$ una matriz de $m \times n$ con rango $r$. Entonces existe una matriz $\S
 
 $$ A =  U\sigma V^T $$
 
+Cualquier factorización $A =  U\sigma V^T$ con $U$ y $V$ ortogonales y entradas positivas en $D$, se llama descomposición en valores singulares de $A$. Las matrices $U$ y $V$ no están determiandas de forma única por $A$, pero loas entradas diagonales en $D$ son necesariamente lso valores singulares de $A$. 
+
 
 ## Desarrollo 
 
