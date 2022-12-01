@@ -41,7 +41,7 @@ Así cada renglón de $U$ en la descomposición de valores singulares es una can
 
 Para graficar estas canciones en un plano solo consideramos los 2 valores singulares mas grandes. Al graficar obtenemos 
 
-![Rplot1](https://user-images.githubusercontent.com/74944322/204724338-bb29a60e-f621-467e-8383-0e52731efd52.png)>
+![Rplot1](https://user-images.githubusercontent.com/74944322/204724338-bb29a60e-f621-467e-8383-0e52731efd52.png)
 
 Así obtenemos todas las canciones en este espacio de estilos.
 
@@ -51,8 +51,9 @@ $$ d = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2} $$
 
 Para un par de canciones con coordenadas $(x_1, y_1)$ y $(x_2, y_2)$, entonces para Can't Get Enough - Pegboard Nerds Remix obtenemos la siguiente figura:
 
-![Rplot2](https://user-images.githubusercontent.com/74944322/204742563-835ae430-ec85-4868-a400-59a585b4c9a0.png)
-*Can't Get Enough - Pegboard Nerds Remix*
+| ![Rplot2](https://user-images.githubusercontent.com/74944322/204742563-835ae430-ec85-4868-a400-59a585b4c9a0.png) |
+|:--:| 
+| *Can't Get Enough - Pegboard Nerds Remix* |
 
 Y así podemos encontrar las 5 canciones con distancias menores, que en este caso serían
 
