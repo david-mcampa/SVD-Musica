@@ -57,6 +57,8 @@ Para un par de canciones con coordenadas $(x_1, y_1)$ y $(x_2, y_2)$, entonces p
   | *Can't Get Enough - Pegboard Nerds Remix* |
 </center>
 
+  
+
 Y así podemos encontrar las 5 canciones con distancias menores, que en este caso serían
 
 | Canción  | Artista |
