@@ -78,11 +78,7 @@ Y así se puede hacer con cualquier canción dentro del dataset. A continuación
 | No Woman - Whitney                            | I Don't Love You - Urban Zakapa         | From This Moment On - Shania Twain      |  
 | Where We Used To Live - Esbjörn Svensson Trio | No Le Digas Que Hacer - Karina Vismara  | Imma Ride - Young Thug                  |
 
-
-
-
-
-
+Y así se podría hacer para más canciones y para bases de datos más grandes. Incluso podría hacerse el mismo análisis considerando aspectos mas técnicos de la música que puedan darnos similitudes mas precisas pues este modelo depende enteramente de los datos que se tienen y de los atributos que se analizan de la música.
 
 ### Lenguaje y Librerías Utilizadas
 
@@ -90,7 +86,7 @@ Para este proyecto se utlizó *R* y las librerías *ggplot2* y *tidyverse*
 
 ## Conclusión
 
-En conclusión la descomposició en valores singulares SVD de nuestra matriz genómica o matriz de atributos $A$ nos permite obtener una matriz $U$ que traslada a las canciones como puntos en $U$ a un espacio de estilos. De ahì es posible calcular distancias euclidianas para obtener que canciones son más parecidas entre sí lo que nos permite proyectar un sistema de recomendación de canciones.
+En conclusión la descomposición en valores singulares SVD de nuestra matriz genómica o matriz de atributos $A$ nos permite obtener una matriz $U$ que traslada a las canciones como puntos en $U$ a un espacio de estilos. De ahì es posible calcular distancias euclidianas para obtener que canciones son más parecidas entre sí lo que nos permite proyectar un sistema de recomendación de canciones. Este análisis es escalable a bases de datos mas grandes y a evaluación de distintos aspectos de la música.
 
 ## Referencias
 
