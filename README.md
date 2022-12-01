@@ -71,8 +71,9 @@ Y así se puede hacer con cualquier canción dentro del dataset. A continuación
 
 | Left-aligned | Center-aligned | Right-aligned |
 | :---         |     :---:      |          ---: |
-| ![4](https://user-images.githubusercontent.com/74944322/205169482-17cc9a1b-c242-458d-8022-a5b9b8f33661.png)    | ![5](https://user-images.githubusercontent.com/74944322/205169498-6dd3f2f5-ee67-4861-9558-5bdc443b5194.png)     | git status    |
+| ![4](https://user-images.githubusercontent.com/74944322/205169482-17cc9a1b-c242-458d-8022-a5b9b8f33661.png)    | ![5](https://user-images.githubusercontent.com/74944322/205169498-6dd3f2f5-ee67-4861-9558-5bdc443b5194.png)     | ![6](https://user-images.githubusercontent.com/74944322/205171176-c05dcee3-71fb-479b-b7e6-5e0eddfa8af5.png)    |
 | git diff     | git diff       | git diff      |
+
 
 
 
