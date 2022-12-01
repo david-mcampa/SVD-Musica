@@ -84,9 +84,13 @@ Y así se podría hacer para más canciones y para bases de datos más grandes. 
 
 Para este proyecto se utlizó *R* y las librerías *ggplot2* y *tidyverse* 
 
-## Conclusión
+## Análisis de Resultados y Conclusión
 
-En conclusión la descomposición en valores singulares SVD de nuestra matriz genómica o matriz de atributos $A$ nos permite obtener una matriz $U$ que traslada a las canciones como puntos en $U$ a un espacio de estilos. De ahì es posible calcular distancias euclidianas para obtener que canciones son más parecidas entre sí lo que nos permite proyectar un sistema de recomendación de canciones. Este análisis es escalable a bases de datos mas grandes y a evaluación de distintos aspectos de la música.
+De las 4 canciones que se mostraron en este proyecto se procedió a escuchar las canciones para evaluar los resultados dados por las distancias en $U$. De las 5 más cercanas para cada canción al menos 3 parecen escucharse del mismo estilo. La razón del por qué 2 parecen ser ajenas al estilo puede ser a que se necesitan tal vez más atributos a analizar y quizá atributos más técnicos de la música como armonía, melodía, ritmo, forma y timbre. El haber obtenido al menos 3 canciones parecidas nos lleva a concluir que nuestros resultados sn satisfactorios y que podrían servir para sistemas de recomendación de canciones más robustos.
+
+En conclusión la descomposición en valores singulares SVD de nuestra matriz genómica o matriz de atributos $A$ nos permite obtener una matriz $U$ que traslada a las canciones como puntos en $U$ a un espacio de estilos. De ahí es posible calcular distancias euclidianas para obtener que canciones son más parecidas entre sí lo que nos permite proyectar un sistema de recomendación de canciones. 
+
+Este análisis es escalable a bases de datos mas grandes y a evaluación de distintos aspectos de la música.
 
 ## Referencias
 
