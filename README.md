@@ -47,7 +47,7 @@ Así obtenemos todas las canciones en este espacio de estilos.
 
 Ahora, podemos utilizar esta representación como ya se mencionó arriba para recomendar canciones, supongamos que tienes un gusto por la canción Can't Get Enough - Pegboard Nerds Remix, la ubicamos dentro del espacio y mediante un gradiente de color resaltamos las canciones más cercanas. La distancia es la distancia euclidiana que está dada por
 
-$$ \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2} $$
+$$ d = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2} $$
 
 Para un par de canciones con coordenadas $(x_1, y_1)$ y $(x_2, y_2)$
 
