@@ -45,7 +45,9 @@ Para graficar estas canciones en un plano solo consideramos los 2 valores singul
 
 Así obtenemos todas las canciones en este espacio de estilos.
 
-Ahora, podemos utilizar esta representación como ya se mencionó arriba para recomendar canciones, supongamos que tienes un gusto por la canción Can't Get Enough - Pegboard Nerds Remix, la ubicamos dentro del espacio y mediante un gradiente de color resaltamos las canciones mas cercanas
+Ahora, podemos utilizar esta representación como ya se mencionó arriba para recomendar canciones, supongamos que tienes un gusto por la canción Can't Get Enough - Pegboard Nerds Remix, la ubicamos dentro del espacio y mediante un gradiente de color resaltamos las canciones más cercanas. La distancia es la distancia euclidiana que está dada por
+
+$$ \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2} $$
 
 ![Rplot2](https://user-images.githubusercontent.com/74944322/204742563-835ae430-ec85-4868-a400-59a585b4c9a0.png)
 
@@ -59,7 +61,7 @@ Y así podemos encontrar las 5 canciones con distancias menores, que en este cas
 | Glad You Came  | The Wanted  |
 | Flashwind - Radio Edit  | Ben Remember  |
 
-Y así se puede hacer con cualquier canción dentro del dataset.
+Y así se puede hacer con cualquier canción dentro del dataset. A continuación se muestra la gráfica para 3 canciones más y sus respectivas 5 canciones con la distancia mas corta
 
 ### Lenguaje y Librerías Utilizadas
 
@@ -67,8 +69,10 @@ Para este proyecto se utlizó *R* y las librerías *ggplot2* y *tidyverse*
 
 ## Conclusión
 
+En conclusión 
+
 
 ## Referencias
 
-
-
+Lay, D. C. & Murrieta, J. E. M. (2007b). Algebra Lineal Y Sus Aplicaciones. Pearson Educación.
+Chen, G. (s. f.). Some notes on SVD, dimensionality reduction, and clustering.
