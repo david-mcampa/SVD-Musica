@@ -93,6 +93,6 @@ En conclusión la descomposición en valores singulares SVD de nuestra matriz ge
 Este análisis es escalable a bases de datos mas grandes y a evaluación de distintos aspectos de la música.
 
 ## Referencias
-
 Lay, D. C. & Murrieta, J. E. M. (2007b). Algebra Lineal Y Sus Aplicaciones. Pearson Educación.
+
 Chen, G. (s. f.). Some notes on SVD, dimensionality reduction, and clustering.
