@@ -20,7 +20,7 @@ for( i in 1:12){
   medias[i] <- mean(atributos[,i])
 }
 
-# Expresión de Genes
+# Expresión de Genes: Si attr < media -> attr = 0, attr > media -> attr = 1
 for(i in 1:12){
   for(j in 1:2017){
     if(atributos[j,i] < medias[i]){
@@ -61,12 +61,14 @@ graficado <- function(){
     labs(x = "Ux", y ="Uy", title = "Descomposición en Valores Singulares: Music Genomics")
 }
 
+
+
+# Función para agregar la columna de distanicas a U
 dist_punto <- function(punto){
   U$distancia <- dists(punto)
   return(U)
 }
 
-U <- dist_punto(2000)
 
 # Esta función grafica todas las canciones pero agrega un gradiente de color
 # para las cancicones mas lejanas al punto que queramos
@@ -79,16 +81,15 @@ graficado_grad <- function(U, punto){
          fill = "Distancia")
 }
 
+# Graficamos
 graficado()
-graficado_grad(U, 2000)
-
+U <- dist_punto(5)      
+graficado_grad(U, 5)
 
 # Ahora encontramos las 10 canciones mas cercanas a una, para ello agregamos la columna del nombre
 # a nuestra matriz U
-
 U <- cbind(U, data$song_title, data$artist)
-canciones_similares <- head(U[order(U$distancia),], 5)
-
+canciones_similares <- head(U[order(U$distancia),], 6)
 canciones_similares
 
 
