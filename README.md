@@ -41,13 +41,21 @@ Así cada renglón de $U$ en la descomposición de valores singulares es una can
 
 Para graficar estas canciones en un plano solo consideramos los 2 valores singulares mas grandes. Al graficar obtenemos 
 
-![Rplot1](https://user-images.githubusercontent.com/74944322/204724338-bb29a60e-f621-467e-8383-0e52731efd52.png)>
+| ![Rplot1](https://user-images.githubusercontent.com/74944322/204724338-bb29a60e-f621-467e-8383-0e52731efd52.png) |
+| :--: | 
+| *Espacio de Estilos* |
 
 Así obtenemos todas las canciones en este espacio de estilos.
 
-Ahora, podemos utilizar esta representación como ya se mencionó arriba para recomendar canciones, supongamos que tienes un gusto por la canción Can't Get Enough - Pegboard Nerds Remix, la ubicamos dentro del espacio y mediante un gradiente de color resaltamos las canciones mas cercanas
+Ahora, podemos utilizar esta representación como ya se mencionó arriba para recomendar canciones, supongamos que tienes un gusto por la canción Can't Get Enough - Pegboard Nerds Remix, la ubicamos dentro del espacio y mediante un gradiente de color resaltamos las canciones más cercanas. La distancia es la distancia euclidiana que está dada por
 
-![Rplot2](https://user-images.githubusercontent.com/74944322/204742563-835ae430-ec85-4868-a400-59a585b4c9a0.png)
+$$ d = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2} $$
+
+Para un par de canciones con coordenadas $(x_1, y_1)$ y $(x_2, y_2)$, entonces para Can't Get Enough - Pegboard Nerds Remix obtenemos la siguiente figura:
+
+| ![Rplot2](https://user-images.githubusercontent.com/74944322/204742563-835ae430-ec85-4868-a400-59a585b4c9a0.png) |
+| :--: | 
+| *Can't Get Enough - Pegboard Nerds Remix* |
 
 Y así podemos encontrar las 5 canciones con distancias menores, que en este caso serían
 
@@ -59,16 +67,32 @@ Y así podemos encontrar las 5 canciones con distancias menores, que en este cas
 | Glad You Came  | The Wanted  |
 | Flashwind - Radio Edit  | Ben Remember  |
 
-Y así se puede hacer con cualquier canción dentro del dataset.
+Y así se puede hacer con cualquier canción dentro del dataset. A continuación se muestra la gráfica para 3 canciones más y sus respectivas 5 canciones con la distancia mas corta
+
+| Master of None - Beach House| Parallel Lines - Junior Boys | Sneakin' - Drake |
+| :---:         |     :---:      |          :---: |
+| ![4](https://user-images.githubusercontent.com/74944322/205169482-17cc9a1b-c242-458d-8022-a5b9b8f33661.png)    | ![5](https://user-images.githubusercontent.com/74944322/205169498-6dd3f2f5-ee67-4861-9558-5bdc443b5194.png)     | ![6](https://user-images.githubusercontent.com/74944322/205171176-c05dcee3-71fb-479b-b7e6-5e0eddfa8af5.png)    |
+| L$D - A$AP Rocky                              | Queen - Perfume Genius                  | Count On You - Big Time Rush            |
+| The Great Gig In The Sky - Pink Floyd         | Love Wins - Love and Theft              | Satellite - SALTNPAPER                  |
+| Night on Bald Mountain - Modest Mussorgsky    | Tears - Matt Hammitt                    | Beautiful Disaster - Jon McLaughlin     |
+| No Woman - Whitney                            | I Don't Love You - Urban Zakapa         | From This Moment On - Shania Twain      |  
+| Where We Used To Live - Esbjörn Svensson Trio | No Le Digas Que Hacer - Karina Vismara  | Imma Ride - Young Thug                  |
+
+Y así se podría hacer para más canciones y para bases de datos más grandes. Incluso podría hacerse el mismo análisis considerando aspectos mas técnicos de la música que puedan darnos similitudes mas precisas pues este modelo depende enteramente de los datos que se tienen y de los atributos que se analizan de la música.
 
 ### Lenguaje y Librerías Utilizadas
 
 Para este proyecto se utlizó *R* y las librerías *ggplot2* y *tidyverse* 
 
-## Conclusión
+## Análisis de Resultados y Conclusión
 
+De las 4 canciones que se mostraron en este proyecto se procedió a escuchar las canciones para evaluar los resultados dados por las distancias en $U$. De las 5 más cercanas para cada canción al menos 3 parecen escucharse del mismo estilo. La razón del por qué 2 en promedio parecen ser ajenas al estilo puede ser a que se necesitan más atributos a analizar y quizá atributos más técnicos de la música como armonía, melodía, ritmo, forma y timbre. El haber obtenido al menos 3 canciones parecidas nos lleva a concluir que nuestros resultados son satisfactorios y que podrían servir para sistemas de recomendación de canciones más robustos.
+
+En conclusión la descomposición en valores singulares SVD de nuestra matriz genómica o matriz de atributos $A$ nos permite obtener una matriz $U$ que traslada a las canciones como puntos en $U$ a un espacio de estilos. De ahí es posible calcular distancias euclidianas para obtener que canciones son más parecidas entre sí lo que nos permite proyectar un sistema de recomendación de canciones. 
+
+Este análisis es escalable a bases de datos mas grandes y a evaluación de distintos aspectos de la música.
 
 ## Referencias
 
-
-
+Lay, D. C. & Murrieta, J. E. M. (2007b). Algebra Lineal Y Sus Aplicaciones. Pearson Educación.
+Chen, G. (s. f.). Some notes on SVD, dimensionality reduction, and clustering.
