@@ -35,11 +35,11 @@ for(i in 1:12){
 atributos <- head(atributos, 2017)
 A <- as.matrix(atributos)
 A.svd <- svd(A, nu=2)
-U <- A.svd$u
-U <- as.data.frame(U)
+U <- A.svd$u            
+U <- as.data.frame(U)   # Convertimos en dataframe
 V <- A.svd$v
-sing_val <- A.svd$d
-Sigma <- sing_val * diag(length(sing_val))[,1:length(sing_val)]
+sing_val <- A.svd$d     # Valores singulares
+Sigma <- sing_val * diag(length(sing_val))[,1:length(sing_val)] # Matriz Sigma
 
 
 
@@ -86,10 +86,10 @@ graficado()
 U <- dist_punto(5)      
 graficado_grad(U, 5)
 
-# Ahora encontramos las 10 canciones mas cercanas a una, para ello agregamos la columna del nombre
+# Ahora encontramos las 5 canciones mas cercanas a una, para ello agregamos la columna del nombre
 # a nuestra matriz U
 U <- cbind(U, data$song_title, data$artist)
-canciones_similares <- head(U[order(U$distancia),], 6)
+canciones_similares <- head(U[order(U$distancia),], 6) # 6 porque esta incluida la misma canción
 canciones_similares
 
 
