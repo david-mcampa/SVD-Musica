@@ -1,7 +1,6 @@
 
 # Instalamos y cargamos librerias
 install.packages("tidyverse")
-install.packages("ggplot2")
 library(tidyverse)
 library(ggplot2)
 
@@ -83,14 +82,14 @@ graficado_grad <- function(U, punto){
 
 # Graficamos
 graficado()
-U <- dist_punto(5)      
-graficado_grad(U, 5)
+U <- dist_punto(4)      # Aqui calculamos respecto a la cancion 5 del archivo data.csv      
+graficado_grad(U, 4)    # Para calcular respecto a otra cancion se cambia el 5 por otro numero de 1 a 2017
 
 # Ahora encontramos las 5 canciones mas cercanas a una, para ello agregamos la columna del nombre
 # a nuestra matriz U
-U <- cbind(U, data$song_title, data$artist)
-canciones_similares <- head(U[order(U$distancia),], 6) # 6 porque esta incluida la misma canción
-canciones_similares
+Sim <- cbind(U, data$song_title, data$artist)
+canciones_similares <- head(Sim[order(U$distancia),], 6) # 6 porque esta incluida la misma canción
+data.frame(canciones_similares$`data$song_title`, canciones_similares$`data$artist`)  # Mostramos las canciones
 
 
 
